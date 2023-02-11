@@ -34,10 +34,9 @@ public class Main {
                 Post.class
         );
         String url = post.getHdurl();
-        System.out.println(url);
 
         String[] s = url.split("/");
-        System.out.println(s[s.length - 1]);
+
         File jpeg = new File(s[s.length - 1]);
 
         HttpGet hdurl = new HttpGet(post.getHdurl());
